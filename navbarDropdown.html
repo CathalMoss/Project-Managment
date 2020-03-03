@@ -1,0 +1,59 @@
+	<!--Nav Bar Taken from https://getbootstrap.com/docs/4.0/components/navbar/  -->
+	<nav class="navbar navbar-dark navbar-expand-lg ">
+		<!-- Window collapse order -->
+		<div class="navbar-collapse collapse w-100 order-1 dual-collapse2">
+			<ul class="navbar-nav mr-auto">
+				<!-- Nav Links -->
+				<li class="nav-item dropdown">
+					<!-- Dropdown for Products -->
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">placeholder</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="placeholder1.html" id = "placeholder1">placeholder1</a>
+						<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="placeholder2.html">placeholder2</a>
+						<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="placeholder3.html">placeholder3</a>
+						<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="placeholder4.html">placeholder4</a>	
+						</div>
+				</li>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="placeholder5.html">Placeholder</a>
+				</li>
+				                     <!-- Internal CSS as "Contact Us" would collapse oddly -->
+				<li class="nav-item" style ="padding-right: 20px, font-family: 'Montserrat', sans-serif, color:#ffffff">
+					<a class="nav-link" href="Contact Us.html" >Contact Us</a>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- Brand Icon, which also acts as the Home button  --> 
+		<div class="mx-auto order-0 order-lg-2">
+			<a class="navbar-brand mx-auto"  href="placeholder.html ">
+				<img src="placeholder.png" width="35" height="35" alt="brand">
+			</a>
+		</div>
+		
+		<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+			<ul class="navbar-nav ml-auto">
+				<!-- Second Half of Nav Links  -->
+				<li class="nav-item">
+					<a class="nav-link" href="placeholder.html">placeholder</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="placeholder.html">Login</a>
+				</li>
+				<!-- Shopping Cart Icon  -->
+				<li class="nav-item">
+					<a class="nav-link" href="placeholderCart.html" id = "shopping-cart"><span class="fa fa-shopping-cart text-light"></span><span id="dispNum"> 0</span></a>
+				</li>
+			</ul>
+		</div>
+		<!-- Hamburger button for collapsed Windows  -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon">
+				<i class="fa fa-navicon text-light"></i>
+			</span>
+        </button>
+	</nav>
