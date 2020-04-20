@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Style.css  -->
+	<link href="styleLogin.css" rel="stylesheet" type="text/css">
+	<!-- Font  -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!-- Favicon.ico (DH) -->
+	<link rel="shortcut icon" href="images\faviconApple.ico" type="image/x-icon">
+    <title>Artifical Intelligence| Login </title>
+  </head>
+  <body>
+
+	<!-- Login Form  -->
+	<div class="log-form">
+			
+			<!-- Home Page button  -->
+			<a href="Project Home Page.html ">
+				<img src="images\AIWhite.png" width="100" height="100" alt="brand" class = "center">
+			</a>
+
+		<h2>Login to your account</h2>	
+	
+	<!-- Form Proper -->	
+	<form>
+		<input type="text" title="email" placeholder="email" id = "email" required />
+		<input type="password" title="pass" placeholder="password" id = "pass" required />
+		<button type="submit" class="btn" onclick="check(this.form)">Login</button>
+		<a class="forgot" href="Contact Us.html">Forgot Username?</a>
+	</form>
+	</div>
+	
+	<!-- Login Function, Login is pre determined as "Joe Heaney" with password "123" and email "joeheaney@gmail.com"  -->
+	<script>
+	function check(form)
+	{
+		if(form.email.value == "joeheaney@gmail.com" && form.pass.value == "123")
+			{
+				window.open('Project Home Page.html')
+			}
+		else
+		{
+			alert("The username or password you entered is not correct")
+		}
+    }
+	
+	
+	</script>
+ 
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

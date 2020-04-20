@@ -1,0 +1,293 @@
+
+/* HTML Tags and text  */ 
+html,body /* Small Fix where there would be a small gab inbetween the edge of the page and the navbar/footer (OK) */
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+body {
+	background-color:#d7d8dd;
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	text-shadow: 1px 1px 1px #282828;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-shadow: 1px 1px 1px #282828;
+}
+p {
+	font-family: 'Montserrat', sans-serif;	
+}
+
+/* NavBar Design */
+li{ /* Links */
+	padding-right: 50px;
+	padding-left: 7px;
+	
+}
+
+ul{
+	font-family: 'Montserrat', sans-serif;	
+	-webkit-transform: scale(1);
+	transform: scale(1.01);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+	color:#ffffff	
+}
+
+.navbar{ /* Colours and position */
+    background-color: #222326;
+	border-bottom-style: solid;
+	border-width: 2px;
+	border-color: #2b2c30;
+	position: sticky;
+	z-index: 10;
+}
+.nav-link{ /* Links Glow Effect */
+	-webkit-transform: scale(1);
+	transform: scale(1.01);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+	font-family: 'Montserrat', sans-serif;
+	color:#ffffff	
+}
+.nav-link:hover{ /* Hover to see glow effect  */
+	-webkit-transform: scale(1.01);
+	transform: scale(1.015);
+	filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+	color:#ffffff
+}
+
+.dropdown-menu {
+	background-color: #222326;
+	margin-top: 20px;
+	
+	
+}
+
+.dropdown-item{
+	
+	font-family: 'Montserrat', sans-serif;
+	color:#ffffff	
+	
+}
+
+.dropdown-item:hover{
+	
+	filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+	color:#ffffff
+}
+
+/* Likely to be removed but this is an animation for the shopping cart when it is hovered over */
+#shopping-cart:hover{ /* Hover */
+	animation: shake .5s 1 alternate;
+	-webkit-transform: scale(1.01);
+	transform: scale(1.015);
+	filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+	color:#ffffff
+}
+@keyframes shake { /* Keyframes called shake  */
+  33% {transform: rotate(10deg);}
+  66% {transform: rotate(-10deg);}
+}
+
+
+#carouselExampleFade{ /* Black shadow under all carousel */
+	box-shadow: 0px 0px 10px 2px #282828;
+}
+img {	/* Animation When hovering over an image link  */
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+img:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.02);
+}
+img:hover{ /* Colour for shadow  */
+    filter: drop-shadow(0px 0px 10px rgba(40, 40, 40, 1));
+}
+
+/* Logo on NavBar */
+.navbar-brand {	/* Animation When hovering over */
+	-webkit-transform: scale(0.1);
+	transform: scale(1);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.navbar-brand:hover {
+	-webkit-transform: scale(0.1);
+	transform: scale(0.95);
+}
+.navbar-brand:hover{ /* Colour for shadow */
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+}
+
+
+.container { /* Colour and Padding for all containers */
+	color: white;
+	border: solid, 0px;
+	padding: 10px;
+}
+.row { /* Colour and Padding for all rows */
+	border: solid, 0px;
+	padding: 0px;
+	color:  black;
+}
+
+/* Footer and Copyright Thing  */
+footer { /* Footer Tag  */
+	font-family: 'Montserrat', sans-serif;
+	background: #333333;
+    position: absolute;
+    left: 0;
+	right: 0;
+	bottom: 1000;
+	text-align: center; 
+}
+.footerLinks { /* Links  */
+   text-align: center;
+   padding: 10px;
+}
+.footerLinks ul { 
+	padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+.footerLinks li {
+	display: inline;
+}
+.footerLinks a {
+	color: #d9d9d9;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.footerLinks li:hover { /* Animation When hovering over  */
+	 text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+	 color:#ffffff
+}
+.copyright { 
+    text-align: center;
+	padding:10px;
+}
+
+.copyright p {
+	margin-bottom: 0;
+	color: #b3b3b3;
+	font-size: 11px;
+}
+
+
+
+#iphones{
+	background-color:white;
+	filter: drop-shadow(0px 0px 5px rgba(69, 70, 71));
+	
+}
+
+#iphones1:hover {
+	-webkit-transform: scale(1.01);
+	transform: scale(1.01);
+}
+
+.card-deck{
+	margin: 3%;
+}
+
+ul.dropdown-lr {
+  width: 300px;
+}
+
+.form-control btn btn-info{
+	margin: 0;
+}
+
+
+
+/* Box for contact page card  */
+
+.box {
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow: auto;
+}
+
+/* grey overlay that items sit on*/
+
+.overlay {
+	position: relative;
+	Background-color: #a5a6aa;
+	border-style: groove;
+	border-color: #c8c9ce;
+	padding: 100px;
+	margin: 5% auto;
+
+	
+}
+
+/* shadow for cards  */
+
+.card-group{
+	filter: drop-shadow(0px 0px 20px black);
+}
+
+/* buttons for contact page   */
+
+button {
+	background-color: black;
+	padding: 20px 70px;
+	border: solid 2px;
+	Border-radius: 40px 10px 40px 10px;
+	font-family: montserrat;
+	font-weight: bold;
+	color: white;
+}
+
+/* Tile for report on about page  */
+
+.report {
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	
+}
+	
+/* image for contact page */
+
+.support {
+	max-width: 100%;
+	max-height: 100vh;
+	margin: auto;
+	filter: drop-shadow(0px 0px 4px black)
+}
+
+/* Css for social media buttons  */
+
+.img_box {
+  display: table;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.img_box a {
+  display: table-cell;
+  text-align: center;
+  width: 16%;
+}
+
+.img_box img {
+  width: 100%;
+  max-width: 150px;
+}
+
+
+
+
